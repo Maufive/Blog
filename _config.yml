@@ -4,7 +4,7 @@ paginate: 5 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
-baseurl: '/blog'
+baseurl: '/my-blog'
 markdown: kramdown
 disqus:
 google_analytics: dbyll
@@ -37,7 +37,7 @@ tags_path: tags.html
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
-BASE_PATH: '/blog'
+BASE_PATH: '/my-blog'
 
 gems:
   - jekyll-paginate
