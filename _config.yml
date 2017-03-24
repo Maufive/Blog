@@ -1,0 +1,43 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 5 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+baseurl: '/blog'
+markdown: kramdown
+disqus:
+google_analytics: dbyll
+title: Niklas blog
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title:
+      comments: false
+
+description: Blogging about my progress learning about Front-end development.
+author:
+  name: Niklas
+  email: albinssonniklas@gmail.com
+  github: Maufive
+  codepen: Maufive
+  portfolio: Maufive
+  bio: Hi there! My name is Niklas and this is my blog. I will be writing about my trials and errors learning front-end development.
+  email_md5: 516e762ebe410e7b2b163e3dc0c9ee43
+
+
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH: '/blog'
+
+gems:
+  - jekyll-paginate
