@@ -39,13 +39,14 @@
 
 })(jQuery);
 
-$(function() {
-   $('.nav li a').click(function() {
-      $('.nav li').removeClass();
-      $($(this).attr('href')).addClass('active');
-   });
+$(function(){
+  $(".fa-search").click(function(){
+    $(".sidebarSearch").fadeIn(500);
+  })
 });
 
+
+// HAMBURGER FUNCITON //
 (function() {
 
   "use strict";

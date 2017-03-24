@@ -2,16 +2,6 @@
 body {
   color: #2c3e50; }
 
-.searchbar {
-  margin-left: 3vh;
-  width: 200px; }
-
-.btn-info {
-  background-color: #fff;
-  border: none; }
-  .btn-info .fa-search {
-    color: #172a3a; }
-
 /* SIDEBAR SECION */
 .sidebar {
   position: fixed;
@@ -48,6 +38,10 @@ a.nav-link:hover {
   font-size: 11px;
   margin: 0 auto;
   margin-bottom: 10px; }
+
+.sidebarSearch {
+  padding-top: 10px;
+  display: none; }
 
 /* END OF SIDEBAR SECTION */
 #contact-list li .fa,
@@ -99,12 +93,9 @@ article .share .gplus:hover {
   padding-bottom: 10px; }
 
 .page-header {
-  color: #e74c3c;
+  color: #E9702E;
   text-shadow: 1px 1px 1px #969696; }
 
-@media only screen and (min-width: 768px) {
-  .page-header {
-    margin-right: 70px; } }
 article {
   margin-bottom: 40px; }
 
@@ -118,7 +109,10 @@ article {
   letter-spacing: 3px; }
 
 article {
-  padding: 0 5% 0; }
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5%;
+  padding-right: 20%; }
 
 article.home div a, article.home pre a {
   color: #2c3e50; }
@@ -140,13 +134,13 @@ article.home h4,
 article.home h5,
 article.home h6 {
   font-family: 'Ubuntu', sans-serif;
-  color: #4D9DE0; }
+  color: #E9702E; }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-  color: #4D9DE0; }
+  color: #E9702E; }
 
 article.home h1 a:hover,
 article.home h2 a:hover,
@@ -277,6 +271,15 @@ c-hamburger span {
 .c-hamburger.is-active span::after {
   transition-delay: 0s, 0.3s; }
 
+@media only screen and (max-width: 1139px) {
+  .list-inline > li {
+    padding-top: 10px; } }
+@media only screen and (min-width: 768px) {
+  .page-header {
+    margin-right: 70px; } }
+@media only screen and (max-width: 950px) {
+  .search {
+    max-width: 110px; } }
 @media only screen and (max-width: 768px) {
   .navbar {
     background: linear-gradient(to right, #ea793c, #F0617D); }
@@ -296,7 +299,7 @@ c-hamburger span {
     color: #fff; }
 
   .navbar-default .navbar-nav > .active > a {
-    background-color: #ee905c !important;
+    background-color: transparent !important;
     color: #fff !important; }
 
   .navbar-toggle,
@@ -305,6 +308,30 @@ c-hamburger span {
     outline: 0;
     border: none;
     background: transparent !important;
-    padding-top: 15px !important; } }
+    padding-top: 15px !important; }
+
+  .navbar-default div.navbar-collapse,
+  .navbar-default .navbar-form {
+    border-top: none;
+    border-bottom: none;
+    box-shadow: none; }
+
+  .input-group .form-control {
+    width: 40%; }
+
+  .twitter {
+    background-color: #019FE9;
+    color: #fff;
+    border: 1px solid #fff; }
+
+  .facebook {
+    background-color: #3b5998;
+    color: #fff;
+    border: 1px solid #fff; }
+
+  .gplus {
+    background-color: #D84B37;
+    color: #fff;
+    border: 1px solid #fff; } }
 
 /*# sourceMappingURL=style.css.map */

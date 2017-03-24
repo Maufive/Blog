@@ -69,21 +69,20 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+				<li class="active"><a href="{{ site.BASE_PATH }}/"><i class="fa fa-home" style="padding-right: 5px"></i>Home</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder-open" style="padding-right: 5px"></i>Categories</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags" style="padding-right: 5px"></i>Tags</a></li>
 
-				<!--
-				<li>
-					<input type="text" class="form-control input-lg" placeholder="Search..." />
-					<span class="input-group-btn">
-							<button class="btn btn-info btn-lg" type="button">
-									<i class="fa fa-search" aria-hidden="true"></i>
-							</button>
-					</span>
-				</li>
-			-->
-
+				<!-- SEARCHBAR -->
+				<div class="col-sm-3 col-md-3 pull-left">
+	        <form class="navbar-form" role="search">
+	        	<div class="input-group">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</div>
+            <input type="text" class="form-control" placeholder="Search..." name="srch-term" id="srch-term">
+        </div>
+				<!-- END SEARCHBAR -->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>

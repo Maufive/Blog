@@ -35,7 +35,7 @@
 
 		<li>
 			<a class="btn btn-default btn-sm" href="http://codepen.io/Maufive/full/QddQoB/">
-				<i class="fa fa-code fa-lg"></i>
+				<i class="fa fa-code  fa-lg"></i>
 			</a>
 		</li>
 
@@ -46,25 +46,37 @@
 			</a>
 		</li>
 		{% endif %}
+
+		<li>
+			<a class="btn btn-default btn-sm">
+				<i class="fa fa-search fa-lg"></i>
+			</a>
+		</li>
+
+
+		<li>
+			<a>
+				<div class="col-lg-6 sidebarSearch">
+					<form class="navbar-form" role="search">
+						<input type="text" class="search" placeholder=" Search..." />
+					</form>
+				</div>
+			</a>
+		</li>
+
 	</ul>
 
-	<div class="container">
-		<div class="row">
-	        <div class="col-md-6">
-	            <div id="custom-search-input">
-	                <div class="input-group col-md-12">
-	                    <input type="text" class="form-control input-sm searchbar" placeholder="Search..." />
-	                    <span class="input-group-btn">
-	                        <button class="btn btn-info btn-lg" type="button">
-	                            <i class="fa fa-search fa-sm" aria-hidden="true"></i>
-	                        </button>
-	                    </span>
-	                </div>
-	            </div>
-	        </div>
-		</div>
-	</div>
 
+
+<!--
+<form>
+	<input type="text" class="form-control input-sm searchbar" placeholder="Search...">
+		<span class="input-group-btn">
+		        <i class="fa fa-search fa-sm" aria-hidden="true"></i>
+		</span>
+	</input>
+</form>
+-->
 
 	<!-- Secondary list for more icons. Dont really need these.
 	<ul id="contact-list-secondary" class="list-unstyled list-inline">

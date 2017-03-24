@@ -8,25 +8,12 @@ $orange: #E9702E;
 $pink: #F0617D;
 $headerblue: #4D9DE0;
 $bggradient: linear-gradient(to bottom right, lighten($orange, 3%), #F0617D);
+$header: #E9702E;
 
 
 
 body{
 	color: #2c3e50;
-}
-
-.searchbar {
-	margin-left: 3vh;
-	width: 200px;
-
-}
-
-.btn-info {
-	background-color: #fff;
-	border: none;
-	.fa-search {
-		color: $color3;
-	}
 }
 
 /* SIDEBAR SECION */
@@ -68,6 +55,12 @@ a.nav-link:hover { color: #777; }
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
+
+.sidebarSearch {
+	padding-top: 10px;
+	display: none;
+}
+
 
 /* END OF SIDEBAR SECTION */
 
@@ -126,15 +119,10 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
+	color: $header;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
-@media only screen and (min-width: 768px) {
-    .page-header{
-        margin-right: 70px;
-    }
-}
 
 article{
 	margin-bottom: 40px;
@@ -152,7 +140,10 @@ article{
 }
 
 article {
-	padding: 0 5% 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5%;
+	padding-right: 20%
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
@@ -167,14 +158,14 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Ubuntu', sans-serif;
-	color: $headerblue;
+	color: $header;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: $headerblue;
+	color: $header;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
@@ -339,6 +330,24 @@ c-hamburger span {
 }
 
 
+// === MEDIA QUERIES === //
+@media only screen and (max-width: 1139px) {
+	.list-inline > li {
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    .page-header{
+        margin-right: 70px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+	.search {
+		max-width: 110px;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	.navbar {
@@ -359,7 +368,7 @@ c-hamburger span {
 			color: #fff;
 		}
 		.navbar-default .navbar-nav > .active > a {
-			background-color: #ee905c !important;
+			background-color: transparent !important;
 			color: #fff !important;
 		}
 	.navbar-toggle,
@@ -369,5 +378,30 @@ c-hamburger span {
 		border: none;
 		background: transparent !important;
 		padding-top: 15px !important;
+	}
+	.navbar-default div.navbar-collapse,
+	.navbar-default .navbar-form {
+		border-top: none;
+		border-bottom: none;
+		box-shadow: none;
+	}
+
+	.input-group .form-control {
+		width: 40%;
+	}
+	.twitter {
+		background-color: #019FE9;
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	.facebook {
+		background-color: #3b5998;
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	.gplus {
+		background-color: #D84B37;
+		color: #fff;
+		border: 1px solid #fff;
 	}
 }
