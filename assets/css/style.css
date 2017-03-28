@@ -1,6 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   color: #2c3e50; }
+
+p {
+  font-size: 16px; }
 
 /* SIDEBAR SECION */
 .sidebar {
@@ -271,6 +275,16 @@ c-hamburger span {
 .c-hamburger.is-active span::after {
   transition-delay: 0s, 0.3s; }
 
+@media only screen and (max-width: 450px) {
+  .img-circle {
+    display: none; }
+
+  .navbar-brand {
+    padding-top: 20px; }
+
+  .fa-codepen,
+  .fa-github {
+    display: none; } }
 @media only screen and (max-width: 1139px) {
   .list-inline > li {
     padding-top: 10px; } }

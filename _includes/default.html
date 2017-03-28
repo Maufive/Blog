@@ -40,6 +40,17 @@
 			<button type="button" class="navbar-toggle c-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span></span>
 			</button>
+			{% if site.author.email %}
+			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+				<i class="fa fa-envelope"></i>
+			</a>
+			{% endif %}
+
+			<a type="button" class="navbar-toggle nav-link" href="http://codepen.io/Maufive/full/QddQoB/">
+				<i class="fa fa-code"></i>
+			</a>
+
+
 			{% if site.author.github %}
 			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
 				<i class="fa fa-github"></i>
@@ -50,15 +61,6 @@
 				<i class="fa fa-codepen"></i>
 			</a>
 			{% endif %}
-			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope"></i>
-			</a>
-			{% endif %}
-
-			<a type="button" class="navbar-toggle nav-link" href="http://codepen.io/Maufive/full/QddQoB/">
-				<i class="fa fa-code"></i>
-			</a>
 
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
 				<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
